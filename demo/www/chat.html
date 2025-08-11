@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>聊天室</title>
+    <style> 
+        body{
+		font-family: sans-serif;
+		margin: 0;
+		padding: 10px;
+		background: #1a1a1a;
+		color: white;
+	}
+        .container{
+		max-width: 800px; margin: 0 auto;
+	}
+        .messages{
+		height: 400px;
+		overflow-y: auto;/* 超出页面自动向下滚动  */
+		border: 1px solid #333;
+		padding: 10px;
+		margin-bottom: 10px;
+		background: #222;
+	}
+        .message{
+		margin-bottom: 8px;
+	}
+        .user{
+		font-weight: bold; color: #4F46E5;
+	}
+        .input-area{
+		display: flex;
+	}
+        input{
+		flex-grow: 1;
+		padding: 8px;
+		background: #333;
+		border: 1px solid #444;
+		color: white;
+	}
+        button{
+		padding: 8px 15px;
+		background: #4F46E5;
+		color: white;
+		border: none;
+		cursor: pointer;
+	}
+    </style>
+    <!--style段只是设置容器样式-->
+</head>
+<body>
+    <div class="container">
+        <h1>聊天室</h1>
+        
+        <div class="messages">
+
+            <div class="message"><span class="user">系统</span>: 欢迎进入聊天室</div>
+            <!-- 消息显示检测行 -->
+	    <!--比如：-->
+	    
+	    <!--
+	    <div class="message"><span class="user">名字</span>: 消息</div>
+	    -->
+        </div>
+        
+        <form action="/chat.html" method="POST" class="input-area">
+		<!--下面的required是设置input为必填字段-->
+		<!--input的value不写就是空白-->
+            <input type="text" name="message" placeholder="输入消息..." required>
+            <button type="submit">发送</button>
+	</form>
+	
+	<div>	
+	
+	<form action="/page2.html" method="POST">
+        <button type="submit">退出</button>
+        </form>
+	
+	</div>
+    </div>
+</body>
+</html>
+    

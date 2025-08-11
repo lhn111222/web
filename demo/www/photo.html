@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>简易图库</title>
+</head>
+<style>
+.btn {
+            background-color: #1a73e8;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #155eb4;
+        }
+</style>
+<body>
+    <h1>我的图库</h1>
+    <a href="/page2.html" class="btn" style="float: right;">返回功能总览</a>
+    <form action="/photo.html" method="post">
+        <input type="hidden" name="current" value="1">
+        
+        <div style="text-align: center;">
+            <button type="submit" name="action" value="prev">上一张</button>
+            
+            <img src="1.jpg" alt="当前图片" style="max-width: 80%; margin: 20px;">
+            
+            <button type="submit" name="action" value="next">下一张</button>
+        </div>
+    </form>
+</body>
+</html>

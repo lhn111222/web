@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- 声明文档类型为HTML5 -->
+
+<html lang="zh-CN">
+<!-- 设置页面语言为中文 -->
+
+<head>
+    <!-- 页面头部，包含元数据和外部资源引用 -->
+    <meta charset="UTF-8">
+    <!-- 设置字符编码为UTF-8 -->
+    
+    <title>字符串计算器</title>
+    <!-- 设置页面标题 -->
+    
+    <style>
+        /* 内部样式表，定义页面视觉样式 */
+        
+        body {
+            
+            background-image: url('bg2.jpg');
+            /* 设置背景图片 */
+            
+            background-size: cover;
+            /* 背景图片覆盖整个页面 */
+            
+            background-attachment: fixed;
+            /* 背景图片固定不动 */
+            
+            background-position: center;
+            /* 背景图片居中显示 */
+            
+            text-align: center;
+            /* 页面内容居中对齐 */
+            
+            padding: 20px;
+            /* 页面内边距 内容和边框的距离 px使像素*/
+        }
+
+        h1 {
+            color: blue;
+            /* 设置标题颜色为蓝色 */
+            
+            font-size: 2.5rem;
+            /* 设置标题字体大小 */
+        }
+	
+        a {
+            display: inline-block;
+            /* 将链接显示为内联块元素 */
+            padding: 0.8rem 2rem;
+            /* 设置链接内边距 */
+            background: #1a73e8;
+            /* 设置链接背景颜色为蓝色 */
+            color: white;
+            /* 设置链接文字颜色为白色 */
+            text-decoration: none;
+            /* 移除链接下划线 */
+            border-radius: 8px;
+            /* 设置链接圆角 */
+            font-weight: 500;
+            /* 设置链接字体粗细 */
+            margin-bottom: 2rem;
+            /* 设置链接底部外边距 */
+            transition: background 0.3s;
+            /* 添加背景颜色过渡动画 */
+        }
+
+        a:hover {
+            background: #155eb4;
+            /* 鼠标悬停时链接背景颜色变深 */
+        }
+
+	h2{
+	    color: black;
+            /* 设置标题颜色为蓝色 */
+
+            font-size: 1.0rem;
+            /* 设置标题字体大小 */
+	}
+
+	label {
+            font-size: 1.5rem; /* 调整为所需大小 */
+            margin-right: 10px;
+        }
+
+        input,
+        button {
+            padding: 10px;
+            /* 输入框和按钮内边距 */
+            
+            margin: 5px;
+            /* 输入框和按钮外边距 */
+            
+            font-size: 30px;
+            /* 输入框和按钮字体大小 */
+            
+            border: none;
+            /* 无边框 */
+            
+            border-radius: 5px;
+            /* 圆角边框 */
+
+	    cursor: pointer;
+            /* 鼠标悬停时显示手型光标 */
+        }
+	
+	#result {
+ 	   margin-top: 20px;
+ 	   font-size: 24px;
+	   color: green;
+	}
+    </style>
+</head>
+
+<body>
+    <!-- 页面主体，包含可见内容 -->
+    <h1>字符串计算器</h1>
+
+    <form action="/calculate.html" method="post">
+    <label for="expression">请输入数学表达式：</label>
+    <!-- 这里不设置value属性，文本框初始为空 -->
+    <input type="text" id="expression" name="expr" placeholder="例如：1+1">  
+    <button>
+    <input type="submit" value="计算">
+    </button>
+    <div>
+    <a href="page2.html">返回功能总览</a>
+    </div>
+    </form>
+
+<div id="result">计算结果:2.000000</div>
+<div id="result">计算结果:2.000000</div>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- 声明文档类型为HTML5 -->
+
+<html lang="zh-CN">
+<!-- 设置页面语言为中文 -->
+
+<head>
+    <!-- 页面头部，包含元数据和外部资源引用 -->
+    <meta charset="UTF-8">
+    <!-- 设置字符编码为UTF-8 -->
+    
+    <title>在线播放歌曲 - SJJ项目</title>
+    <!-- 设置页面标题 -->
+    
+    <style>
+        /* 内部样式表，定义页面视觉样式 */
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            /* 设置页面字体为Inter无衬线字体 */
+            
+            background-color: #f8f9fa;
+            /* 设置背景颜色为浅灰色 */
+            
+            margin: 0;
+            padding: 0;
+            /* 重置页面边距和内边距 */
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* 使用Flexbox布局，垂直居中内容 */
+            
+            min-height: 100vh;
+            /* 设置最小高度为整个视口高度 */
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            /* 设置标题字体大小 */
+            
+            color: #1a73e8;
+            /* 设置标题颜色为蓝色 */
+            
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            /* 添加轻微文字阴影，增强视觉效果 */
+            
+            margin-bottom: 1rem;
+            /* 设置标题底部外边距 */
+        }
+
+        p {
+            font-size: 1.2rem;
+            /* 设置段落字体大小 */
+            
+            color: #666;
+            /* 设置段落颜色为深灰色 */
+            
+            margin-bottom: 4rem;
+            /* 设置段落底部外边距 */
+        }
+
+        a {
+            display: inline-block;
+            /* 将链接显示为内联块元素 */
+            
+            padding: 0.8rem 2rem;
+            /* 设置链接内边距 */
+            
+            background: #1a73e8;
+            /* 设置链接背景颜色为蓝色 */
+            
+            color: white;
+            /* 设置链接文字颜色为白色 */
+            
+            text-decoration: none;
+            /* 移除链接下划线 */
+            
+            border-radius: 8px;
+            /* 设置链接圆角 */
+            
+            font-weight: 500;
+            /* 设置链接字体粗细 */
+            
+            margin-bottom: 2rem;
+            /* 设置链接底部外边距 */
+            
+            transition: background 0.3s;
+            /* 添加背景颜色过渡动画 */
+        }
+
+        a:hover {
+            background: #155eb4;
+            /* 鼠标悬停时链接背景颜色变深 */
+        }
+
+        audio {
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+            /* 为音频控件添加轻微阴影 */
+            
+            border-radius: 12px;
+            /* 设置音频控件圆角 */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 页面主体，包含可见内容 -->
+    <a href="page2.html">返回功能总览</a>
+    <!-- 返回链接，点击后跳转到page2.html -->
+    
+    <h1>在线播放歌曲</h1>
+    <!-- 页面标题 -->
+    
+    <p>使用播放器控件播放或暂停歌曲</p>
+    <!-- 页面说明文字 -->
+    
+    <audio id="music" src="m1.mp3" controls></audio>
+    <!-- HTML5音频播放器控件 -->
+    <!-- id="music"：设置音频元素ID -->
+    <!-- src="m1.mp3"：指定音频文件路径 -->
+    <!-- controls：显示浏览器默认的播放控件 -->
+</body>
+
+</html>

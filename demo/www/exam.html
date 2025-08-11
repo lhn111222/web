@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>在线考试</title>
+    <style>
+        body { max-width: 800px; margin: 0 auto; padding: 20px; }
+        .timer { background: #f0f0f0; padding: 10px; text-align: center; }
+        .question { margin-bottom: 20px; }
+        input[type="radio"] { margin-right: 5px; }
+        button { padding: 10px 20px; background: #4CAF50; color: white; border: none;}
+	.btn {
+            background-color: #1a73e8;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="timer">
+        <strong>考试时间：30分钟</strong>
+        <p>请在规定时间内完成答题并提交</p>
+	<a href="page2.html" class="btn" style="float: right;">返回功能总览</a>
+    </div>
+
+    <form action="/exam.html" method="post">
+        <input type="hidden" name="time_limit" value="30">
+        
+        <div class="question">
+            <h3>1. 计算：123 + 456 = ?</h3>
+            <label><input type="radio" name="q1" value="A"> A. 579</label><br>
+            <label><input type="radio" name="q1" value="B"> B. 589</label><br>
+            <label><input type="radio" name="q1" value="C"> C. 679</label><br>
+            <label><input type="radio" name="q1" value="D"> D. 689</label>
+        </div>
+
+        <div class="question">
+            <h3>2. 计算：897 - 321 = ?</h3>
+            <label><input type="radio" name="q2" value="A"> A. 556</label><br>
+            <label><input type="radio" name="q2" value="B"> B. 566</label><br>
+            <label><input type="radio" name="q2" value="C"> C. 576</label><br>
+            <label><input type="radio" name="q2" value="D"> D. 586</label>
+        </div>
+
+        <div class="question">
+            <h3>3. 计算：25 × 16 = ?</h3>
+            <label><input type="radio" name="q3" value="A"> A. 350</label><br>
+            <label><input type="radio" name="q3" value="B"> B. 400</label><br>
+            <label><input type="radio" name="q3" value="C"> C. 450</label><br>
+            <label><input type="radio" name="q3" value="D"> D. 500</label>
+        </div>
+
+        <div class="question">
+            <h3>4. 计算：144 ÷ 12 = ?</h3>
+            <label><input type="radio" name="q4" value="A"> A. 10</label><br>
+            <label><input type="radio" name="q4" value="B"> B. 11</label><br>
+            <label><input type="radio" name="q4" value="C"> C. 12</label><br>
+            <label><input type="radio" name="q4" value="D"> D. 13</label>
+        </div>
+
+        <div class="question">
+            <h3>5. 计算：(3 + 5) × 2 = ?</h3>
+            <label><input type="radio" name="q5" value="A"> A. 14</label><br>
+            <label><input type="radio" name="q5" value="B"> B. 16</label><br>
+            <label><input type="radio" name="q5" value="C"> C. 18</label><br>
+            <label><input type="radio" name="q5" value="D"> D. 20</label>
+        </div>
+	
+	<div>
+		<h3>成绩：</h3>
+		<!--成绩显示-->
+		<!--<h3>%s</h3>-->
+	</div>
+
+        <button type="submit">提交答案</button>
+    </form>
+</body>
+</html>
+    

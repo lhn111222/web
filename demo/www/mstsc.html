@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>打开远程桌面</title>
+</head>
+<body>
+    <button onclick="openRDP()">打开远程桌面</button>
+    
+    <script>
+        function openRDP() {
+            try {
+                // 尝试通过协议调用
+                window.location.href = 'mstsc:';
+                
+                // 提示用户可能的安全提示
+                setTimeout(() => {
+                    alert('如果没有反应，请检查浏览器是否阻止了弹出窗口');
+                }, 1000);
+            } catch (e) {
+                alert('无法打开远程桌面，请手动启动：Win+R → mstsc');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <!-- 设置字符编码为UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- 设置页面在不同设备上的显示比例 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 设置网页标题 -->
+    <title>SJJ项目2</title>
+    <style>
+        /* 全局样式：设置所有元素的外边距和内边距为0，并且使用边框盒模型 */
+        *
+	{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 设置body的背景图片 */
+        body
+	{
+            background-image: url('bg.jpg');
+            background-size: cover;
+            text-align: center;
+	    height: 20%;
+	    background-position: center; /* 背景图片居中显示 */
+	    background-attachment: fixed; /* 背景图片固定，不随页面滚动 */
+        }
+
+        /* 导航栏样式 */
+        header
+	{
+            background-color: white;
+            padding: 10px;
+        }
+
+        /* 导航栏链接样式 */
+        nav a /* 选中av标签里的 a标签*/
+	{
+            color: black;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* 鼠标悬停在导航栏链接上的样式 */
+        nav a:hover
+	{
+            color: blue;
+        }
+
+        /* 主内容区样式 */
+        main
+	{
+            padding: 50px;
+        }
+
+        /* 主标题样式 */
+        .hero-title
+	{
+            font-size: 30px;
+            color: blue;
+            margin-bottom: 20px;
+        }
+
+        /* 副标题样式 */
+        .sub-title
+	{
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        /* 图片链接样式 */
+        .img-link
+	{
+            display: inline-block; /* inline-block会自动限定链接为图片宽度  */
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <nav>
+            <a href="/" class="logo">孙浚杰</a>
+            <!-- 导航链接 -->
+            <a href="index.html">首页</a>
+            <a href="calculator.html">计算器</a>
+            <a href="music.html">mp3播放</a>
+            <a href="photo.html">我的图库</a>
+            <a href="myls.html">命令执行</a>
+            <a href="exam.html">在线考试</a>
+            <a href="chat.html">聊天室</a>
+            <a href="file.html">文件上传下载</a>
+            <a href="nmap.html">班级机器状态</a>
+            <a href="mstsc.html">打开远程</a>
+        </nav>
+    </header>
+
+    <!-- 主内容区 -->
+    <main>
+        <!-- 主标题 -->
+        <h1 class="hero-title">欢迎来到一站式工具箱网站</h1>
+        <!-- 副标题 -->
+        <p class="sub-title">点击图片进入功能总览</p>
+        <!-- 图片链接 -->
+        <a href="page2.html" class="img-link">
+            <img src="example.jpg" alt="示例图片" width="300">
+        </a>
+    </main>
+
+</body>
+
+</html>

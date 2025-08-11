@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>文件上传下载</title>
+    <style>
+        body { font-family: sans-serif; margin: 0; padding: 20px; background: #f0f0f0; }
+        .container { max-width: 800px; margin: 0 auto; background: white; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1 { color: #333; }
+        .upload-form { margin-bottom: 30px; padding: 20px; border: 1px solid #ddd; border-radius: 5px; }
+        .upload-form input[type="file"] { margin-bottom: 10px; }
+        .upload-form input[type="submit"] { padding: 8px 15px; background: #4CAF50; color: white; border: none; cursor: pointer; }
+        .file-list { margin-top: 20px; }
+        .file-item { padding: 10px; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
+        .file-item:last-child { border-bottom: none; }
+        .download-btn { padding: 5px 10px; background: #2196F3; color: white; text-decoration: none; border-radius: 3px; }
+	.btn {
+            background-color: #1a73e8;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #155eb4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>文件上传下载</h1>
+	<a href="/page2.html" class="btn" style="float: right;">返回功能总览</a>
+        <!-- 文件上传表单 -->
+        <div class="upload-form">
+            <h2>上传文件</h2>
+            <form action="/file.html" method="POST" enctype="multipart/form-data">
+                <input type="file" name="file" required>
+                <input type="submit" value="上传">
+            </form>
+        </div>
+        
+        <!-- 文件列表 -->
+        <div class="file-list">
+            <h2>文件列表</h2>
+            <!-- 后端动态生成文件列表 -->
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>目录列表</title>
+    <style>
+        table {
+            border-collapse: collapse; 
+            width: 100%;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd; 
+            padding: 12px; 
+            text-align: left;
+            display: block; /* 使每个单元格独占一行 */
+            width: 100%; /* 宽度填满容器 */
+            box-sizing: border-box; /* 包含padding在宽度内 */
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        tr {
+            display: block; /* 使每行独占一行 */
+            margin-bottom: 10px; /* 行间距 */
+        }
+    </style>
+</head>
+<body>
+    <h1>班级机器状态</h1>
+    
+    <form action="/nmap.html" method="post">
+    <button>
+    <input type="submit" value="点击获取">
+    </button>
+    </form>
+    
+    <table>
+        <tr>
+            <th>文件名</th>
+        </tr>   
+        <!-- comment -->
+
+    </table>
+    <a href="page2.html">返回功能总览</a>
+</body>
+</html>
+
